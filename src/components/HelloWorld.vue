@@ -9,7 +9,7 @@
           </n-radio-group>
           <n-space vertical>
             <n-card v-for="(question, index) in selectedQuestions" :key="index" :style="{ opacity: answeredQuestions[index] ? 0.5 : 1 }">
-              <n-card-header>{{ question.question }}</n-card-header>
+              <template #header>{{ question.question }}</template>
               <n-radio-group v-model:value="answers[index]">
                 <n-radio v-for="(answer, answerIndex) in question.answers" :key="answerIndex" :label="answerIndex">{{ answer }}</n-radio>
               </n-radio-group>
@@ -27,7 +27,7 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { NConfigProvider, NLayout, NLayoutHeader, NLayoutContent, NSpace, NRadioGroup, NRadio, NCard, NCardHeader, NButton, NAlert } from 'naive-ui';
+import { NConfigProvider, NLayout, NLayoutHeader, NLayoutContent, NSpace, NRadioGroup, NRadio, NCard, NButton, NAlert } from 'naive-ui';
 
 const themeOverrides = {
   common: {
