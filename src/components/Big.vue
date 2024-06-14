@@ -17,7 +17,7 @@
               </n-space>
             </n-space>
             <n-alert v-if="showResult" :type="isCorrect ? 'success' : 'error'" title="结果">
-              {{ isCorrect ? '回答正确！' : '回答错误！' }}
+              {{ isCorrect ? '回答正确！' : '回答错误！正确答案：'+currentQuestion.answers[currentQuestion.correctAnswer] }}
             </n-alert>
             <n-button v-if="showNextButton" @click="nextQuestion">下一题</n-button>
           </n-card>
