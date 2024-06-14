@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Big from './components/Big.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <Big />
 </template>
