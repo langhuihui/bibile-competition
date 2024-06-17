@@ -7,9 +7,7 @@
               <div class="question">{{ currentQuestion.question }}</div>
               <n-space>
                 <n-radio-group v-model:value="selectedOption">
-                  <n-radio :label="option" v-for="(option,optionIndex ) in currentQuestion.answers" :key="option" :value="optionIndex">
-                    {{ option }}
-                  </n-radio>
+                  <n-radio-button class="option" :label="option" v-for="(option,optionIndex ) in currentQuestion.answers" :key="option" :value="optionIndex"></n-radio-button>
                 </n-radio-group>
               </n-space>
               <n-space justify="end">
@@ -28,8 +26,8 @@
   
   <script setup>
   import { ref } from 'vue';
-  import { NConfigProvider, NLayout, NLayoutContent, NLayoutHeader, NLayoutSider, NLayoutFooter, NMenu, NButton, NRadioGroup, NRadio, NCard, NAlert, NSpace } from 'naive-ui';
-  import { questions } from './questions'
+  import { NConfigProvider, NLayout, NLayoutContent, NLayoutHeader, NLayoutSider, NLayoutFooter, NMenu, NButton, NRadioGroup, NRadio, NCard, NAlert, NSpace, NRadioButton } from 'naive-ui';
+  import questions from './question.json'
  
   
   const currentQuestionIndex = ref(0);
@@ -65,6 +63,13 @@
   </script>
   <style>
 .question {
-  font-size: xx-large;
+  font-size: 8rem;
+}
+.option {
+  font-size: 4rem;
+  min-height: 100px;
+  min-width: 300px;
+  margin: 10px;
+  line-height: 4rem;
 }
 </style>

@@ -1,0 +1,52 @@
+[
+  {
+    "question":"《马太福音》第 1 章记载耶稣基督的家谱，从___开始。",
+    "answers":["亚伯拉罕","大卫","亚当"],
+    "correctAnswer":0
+  },
+  {
+    "question":"以下不是耶稣祖先的是___。",
+    "answers":["以撒","扫罗","犹大"],
+    "correctAnswer":1
+  },
+  {
+    "question":"判断题：《马太福音》第 1 章主要讲述了耶稣的诞生。",
+    "answers":["正确","错误"],
+    "correctAnswer":0
+  },
+  {
+    "question":"选择题：耶稣的母亲是___。",
+    "answers":["马利亚","以利沙伯","撒拉"],
+    "correctAnswer":0
+  },
+  {
+    "question":"《马太福音》第 1 章中提到的希律王是___的王。",
+    "answers":["犹太","罗马","埃及"],
+    "correctAnswer":0
+  },
+  {
+    "question":"判断题：《马太福音》第 1 章中有天使向约瑟显现。",
+    "answers":["正确","错误"],
+    "correctAnswer":1
+  },
+  {
+    "question":"选词填空：耶稣基督的降生是关乎万民的（  ）。",
+    "answers":["大喜信息","预言","应许"],
+    "correctAnswer":0
+  },
+  {
+    "question":"选择题：《马太福音》第 1 章中约瑟是___人。",
+    "answers":["伯利恒","拿撒勒","加利利"],
+    "correctAnswer":1
+  },
+  {
+    "question":"判断题：《马太福音》第 1 章提到了耶稣的童年生活。",
+    "answers":["正确","错误"],
+    "correctAnswer":0
+  },
+  {
+    "question":"选词填空：马太福音开始记载耶稣基督的（  ）。",
+    "answers":["诞生","生平","家谱"],
+    "correctAnswer":2
+  }
+]
